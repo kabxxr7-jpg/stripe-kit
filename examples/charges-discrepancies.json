@@ -1,0 +1,8 @@
+{
+  "object": "list",
+  "data": [
+    { "id": "ch_fx_otp", "object": "charge", "payment_intent": "pi_fx_otp", "amount": 4900, "currency": "usd", "status": "succeeded", "amount_refunded": 2000, "created": 1767225710 },
+    { "id": "ch_fx_bob_1", "object": "charge", "payment_intent": "pi_fx_bob_1", "amount": 1250, "currency": "usd", "status": "succeeded", "amount_refunded": 0, "created": 1767226604 },
+    { "id": "ch_fx_unrecorded", "object": "charge", "payment_intent": "pi_fx_unrecorded", "amount": 999, "currency": "usd", "status": "succeeded", "amount_refunded": 0, "created": 1767227000 }
+  ]
+}

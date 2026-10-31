@@ -1,0 +1,5 @@
+id,Created (UTC),Amount,Amount Refunded,Currency,Status,PaymentIntent ID
+ch_fx_otp,2026-01-01 00:01:50,49.00,15.00,usd,Paid,pi_fx_otp
+ch_fx_jpy,2026-01-01 00:03:20,1500,0,jpy,Paid,pi_fx_jpy
+ch_fx_bob_1,2026-01-01 00:16:44,12.00,0.00,usd,Paid,pi_fx_bob_1
+ch_fx_declined,2026-01-01 00:33:10,25.00,0.00,usd,Failed,pi_fx_declined
