@@ -1,0 +1,33 @@
+{
+  "id": "evt_fx_sub_1",
+  "object": "event",
+  "api_version": "2024-06-20",
+  "created": 1767226600,
+  "data": {
+    "object": {
+      "id": "cs_test_fx_sub",
+      "object": "checkout.session",
+      "mode": "subscription",
+      "status": "complete",
+      "payment_status": "paid",
+      "amount_total": 1200,
+      "currency": "usd",
+      "customer": "cus_fx_bob",
+      "customer_details": {
+        "email": "bob@example.test",
+        "name": "Test Buyer"
+      },
+      "payment_intent": null,
+      "subscription": "sub_fx_bob",
+      "client_reference_id": null,
+      "created": 1767226600
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.completed"
+}

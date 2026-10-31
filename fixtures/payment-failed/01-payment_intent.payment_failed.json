@@ -1,0 +1,30 @@
+{
+  "id": "evt_fx_fail_1",
+  "object": "event",
+  "api_version": "2024-06-20",
+  "created": 1767227600,
+  "data": {
+    "object": {
+      "id": "pi_fx_declined",
+      "object": "payment_intent",
+      "amount": 2500,
+      "currency": "usd",
+      "customer": "cus_fx_carol",
+      "status": "requires_payment_method",
+      "last_payment_error": {
+        "code": "card_declined",
+        "decline_code": "insufficient_funds",
+        "message": "Your card has insufficient funds.",
+        "type": "card_error"
+      },
+      "created": 1767227590
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "payment_intent.payment_failed"
+}

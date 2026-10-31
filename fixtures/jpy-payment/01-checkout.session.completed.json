@@ -1,0 +1,33 @@
+{
+  "id": "evt_fx_jpy_1",
+  "object": "event",
+  "api_version": "2024-06-20",
+  "created": 1767225800,
+  "data": {
+    "object": {
+      "id": "cs_test_fx_jpy",
+      "object": "checkout.session",
+      "mode": "payment",
+      "status": "complete",
+      "payment_status": "paid",
+      "amount_total": 1500,
+      "currency": "jpy",
+      "customer": "cus_fx_hiro",
+      "customer_details": {
+        "email": "hiro@example.test",
+        "name": "Test Buyer"
+      },
+      "payment_intent": "pi_fx_jpy",
+      "subscription": null,
+      "client_reference_id": null,
+      "created": 1767225800
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "checkout.session.completed"
+}

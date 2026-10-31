@@ -1,0 +1,36 @@
+{
+  "id": "evt_fx_sub_5",
+  "object": "event",
+  "api_version": "2024-06-20",
+  "created": 1769904005,
+  "data": {
+    "object": {
+      "id": "sub_fx_bob",
+      "object": "subscription",
+      "customer": "cus_fx_bob",
+      "status": "past_due",
+      "cancel_at_period_end": false,
+      "canceled_at": null,
+      "current_period_end": 1769904000,
+      "items": {
+        "object": "list",
+        "data": [
+          {
+            "id": "si_fixture_1",
+            "price": {
+              "id": "price_fixture_monthly"
+            },
+            "current_period_end": 1769904000
+          }
+        ]
+      }
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "customer.subscription.updated"
+}

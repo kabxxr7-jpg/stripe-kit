@@ -1,0 +1,43 @@
+{
+  "id": "evt_fx_otp_2",
+  "object": "event",
+  "api_version": "2024-06-20",
+  "created": 1767226500,
+  "data": {
+    "object": {
+      "id": "ch_fx_otp",
+      "object": "charge",
+      "payment_intent": "pi_fx_otp",
+      "amount": 4900,
+      "currency": "usd",
+      "amount_refunded": 1500,
+      "refunded": false,
+      "customer": "cus_fx_alice",
+      "invoice": null,
+      "created": 1767225710,
+      "refunds": {
+        "object": "list",
+        "data": [
+          {
+            "id": "re_fx_otp_1",
+            "object": "refund",
+            "amount": 1500,
+            "currency": "usd",
+            "status": "succeeded",
+            "reason": "requested_by_customer",
+            "charge": "ch_fx_otp",
+            "payment_intent": "pi_fx_otp",
+            "created": 1767226490
+          }
+        ]
+      }
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "charge.refunded"
+}

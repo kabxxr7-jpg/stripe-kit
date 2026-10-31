@@ -1,0 +1,32 @@
+{
+  "id": "evt_fx_sub_2",
+  "object": "event",
+  "api_version": "2024-06-20",
+  "created": 1767226605,
+  "data": {
+    "object": {
+      "id": "in_fx_bob_1",
+      "object": "invoice",
+      "customer": "cus_fx_bob",
+      "customer_email": "bob@example.test",
+      "payment_intent": "pi_fx_bob_1",
+      "charge": "ch_fx_bob_1",
+      "amount_paid": 1200,
+      "amount_due": 1200,
+      "currency": "usd",
+      "subscription": "sub_fx_bob",
+      "attempt_count": 1,
+      "created": 1767226604,
+      "status_transitions": {
+        "paid_at": 1767226605
+      }
+    }
+  },
+  "livemode": false,
+  "pending_webhooks": 1,
+  "request": {
+    "id": null,
+    "idempotency_key": null
+  },
+  "type": "invoice.paid"
+}
