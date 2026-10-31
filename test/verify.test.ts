@@ -8,7 +8,7 @@ const NOW_MS = NOW_S * 1000;
 const BODY = JSON.stringify({ id: "evt_1", type: "x" }, null, 2);
 
 const header = (body = BODY, secret = SECRET, t = NOW_S) => signStripePayload({ secret, body, timestampSeconds: t });
-const verify = (h: string | undefined | null, body = BODY, extra: Record<string, unknown> = {}) =>
+const verify = (h: string | undefined | null, body: string | Uint8Array = BODY, extra: Record<string, unknown> = {}) =>
   verifyStripeSignature({ secret: SECRET, header: h, body, nowMs: NOW_MS, ...extra });
 
 describe("verifyStripeSignature", () => {
