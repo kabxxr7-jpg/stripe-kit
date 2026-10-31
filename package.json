@@ -1,0 +1,27 @@
+{
+  "name": "stripe-kit",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Stripe integration building blocks: Checkout Session creation, verified and deduplicated webhooks, out-of-order-safe handlers on SQLite, and payments reconciliation. Tested offline against signed fixtures and a local fake Stripe server.",
+  "type": "module",
+  "main": "./src/index.ts",
+  "engines": {
+    "node": ">=25"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "serve": "node scripts/serve.ts",
+    "replay": "node scripts/replay.ts",
+    "reconcile": "node scripts/reconcile.ts",
+    "live-check": "node scripts/live-check.ts",
+    "fixtures:generate": "node scripts/generate-fixtures.ts",
+    "mutation-check": "node scripts/mutation-check.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "stripe": "^23.1.0",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  }
+}
