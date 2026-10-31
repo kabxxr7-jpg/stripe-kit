@@ -2,7 +2,7 @@
 
 > **Status:** a proof project. 196 tests pass locally on Node v25.2.1 (typecheck clean). Everything was tested against **signed fixture events and a local fake Stripe server**. It has **not** been run against Stripe's test mode yet, has not been used for any client, and has had no production use. See Limits below for what was not verified.
 
-A tested starting point for the usual Stripe jobs: "my webhooks fail or fire twice", "orders and subscriptions drift out of sync with Stripe", "reconcile Stripe payouts against our database".
+A tested starting point for the usual Stripe jobs: "my webhooks fail or fire twice", "orders and subscriptions drift out of sync with Stripe", "check a Stripe charges and refunds export against our database".
 
 | Piece | File | What it does |
 |---|---|---|
