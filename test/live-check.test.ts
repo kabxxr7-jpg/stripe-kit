@@ -30,16 +30,17 @@ describe("live-check", () => {
     for (const key of ["sk_live_not_a_real_key_0001", "rk_live_not_a_real_key_0002", "SK_LIVE_not_a_real_key_0003"]) {
       const r = await run({ STRIPE_SECRET_KEY: key }, { fetch: spy });
       expect(r.code).toBe(2);
-      expect(r.output).toMatch(/REFUSED/);
+      expect(r.output).toMatch(/REFUSED: that is a live-mode key/);
       expect(r.output).not.toContain(key);
     }
     expect(calls).toEqual([]);
   });
 
   it("refuses values that do not look like test keys", async () => {
-    for (const key of ["pk_test_not_a_real_key_0004", "whsec_test_not_a_real_secret", "sk_test_", "hello world", "sk_test_abc"]) {
+    for (const key of ["pk_test_not_a_real_key_0004", "whsec_test_not_a_real_secret", "sk_test_x", "hello world", "sk_test_abc"]) {
       const r = await run({ STRIPE_SECRET_KEY: key }, { baseUrl: fake.baseUrl });
       expect(r.code, key).toBe(2);
+      expect(r.output).toMatch(/REFUSED: STRIPE_SECRET_KEY does not look like a test-mode key/);
       expect(r.output).not.toContain(key);
     }
   });
